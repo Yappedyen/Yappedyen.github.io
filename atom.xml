@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Pyenne</title>
   
-  
+  <subtitle>Blog</subtitle>
   <link href="https://yappedyen.top/atom.xml" rel="self"/>
   
   <link href="https://yappedyen.top/"/>
