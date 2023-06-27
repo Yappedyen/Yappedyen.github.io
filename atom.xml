@@ -6,7 +6,7 @@
   <link href="https://yappedyen.top/atom.xml" rel="self"/>
   
   <link href="https://yappedyen.top/"/>
-  <updated>2023-06-27T03:59:12.347Z</updated>
+  <updated>2023-06-27T07:56:51.916Z</updated>
   <id>https://yappedyen.top/</id>
   
   <author>
@@ -15,6 +15,282 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>ThreadsDispatch</title>
+    <link href="https://yappedyen.top/2023/06/27/threadsdispatch/"/>
+    <id>https://yappedyen.top/2023/06/27/threadsdispatch/</id>
+    <published>2023-06-27T07:56:13.000Z</published>
+    <updated>2023-06-27T07:56:51.916Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h4 id=&quot;1、作业调度&quot;&gt;&lt;a href=&quot;#1、作业调度&quot; class=&quot;headerlink&quot; title=&quot;1、作业调度&quot;&gt;&lt;/a&gt;1、作业调度&lt;/h4&gt;&lt;p&gt;作业调度又称为高级调度，频度较低。其主要工作是将&lt;strong&gt;位于外存&lt;/strong&gt;后备&lt;a</summary>
+        
+      
+    
+    
+    
+    
+    <category term="C++" scheme="https://yappedyen.top/tags/C/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>deadlock</title>
+    <link href="https://yappedyen.top/2023/06/27/deadlock/"/>
+    <id>https://yappedyen.top/2023/06/27/deadlock/</id>
+    <published>2023-06-27T07:54:38.000Z</published>
+    <updated>2023-06-27T07:55:12.843Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;死锁&quot;&gt;&lt;a href=&quot;#死锁&quot; class=&quot;headerlink&quot; title=&quot;死锁&quot;&gt;&lt;/a&gt;死锁&lt;/h1&gt;&lt;h2 id=&quot;什么是死锁？&quot;&gt;&lt;a href=&quot;#什么是死锁？&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    
+    <category term="lock" scheme="https://yappedyen.top/tags/lock/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>SortAlgorithm</title>
+    <link href="https://yappedyen.top/2023/06/27/sortalgorithm/"/>
+    <id>https://yappedyen.top/2023/06/27/sortalgorithm/</id>
+    <published>2023-06-27T07:53:03.000Z</published>
+    <updated>2023-06-27T07:53:58.733Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;十大排序算法&quot;&gt;&lt;a href=&quot;#十大排序算法&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    
+    <category term="Algorithm" scheme="https://yappedyen.top/tags/Algorithm/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>ProcessedAndThreads</title>
+    <link href="https://yappedyen.top/2023/06/27/processedandthreads/"/>
+    <id>https://yappedyen.top/2023/06/27/processedandthreads/</id>
+    <published>2023-06-27T07:50:53.000Z</published>
+    <updated>2023-06-27T07:51:22.247Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;现代操作系统是如何做到进程之间隔离的&quot;&gt;&lt;a href=&quot;#现代操作系统是如何做到进程之间隔离的&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    
+    <category term="C++" scheme="https://yappedyen.top/tags/C/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>SmartPointer</title>
+    <link href="https://yappedyen.top/2023/06/27/smartpointer/"/>
+    <id>https://yappedyen.top/2023/06/27/smartpointer/</id>
+    <published>2023-06-27T07:32:49.000Z</published>
+    <updated>2023-06-27T07:33:07.692Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;智能指针&quot;&gt;&lt;a href=&quot;#智能指针&quot; class=&quot;headerlink&quot; title=&quot;智能指针&quot;&gt;&lt;/a&gt;智能指针&lt;/h1&gt;&lt;h1 id=&quot;1-裸指针有哪些不好的地方？&quot;&gt;&lt;a href=&quot;#1-裸指针有哪些不好的地方？&quot;</summary>
+        
+      
+    
+    
+    
+    
+    <category term="C++" scheme="https://yappedyen.top/tags/C/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>TCP_UDP</title>
+    <link href="https://yappedyen.top/2023/06/27/tcp-udp/"/>
+    <id>https://yappedyen.top/2023/06/27/tcp-udp/</id>
+    <published>2023-06-27T07:30:28.000Z</published>
+    <updated>2023-06-27T07:47:27.866Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;1-TCP&quot;&gt;&lt;a href=&quot;#1-TCP&quot; class=&quot;headerlink&quot; title=&quot;1.TCP&quot;&gt;&lt;/a&gt;1.TCP&lt;/h1&gt;&lt;h2 id=&quot;1-TCP头部&quot;&gt;&lt;a href=&quot;#1-TCP头部&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    
+    <category term="Network" scheme="https://yappedyen.top/tags/Network/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>MySQL</title>
+    <link href="https://yappedyen.top/2023/06/27/mysql/"/>
+    <id>https://yappedyen.top/2023/06/27/mysql/</id>
+    <published>2023-06-27T07:16:31.000Z</published>
+    <updated>2023-06-27T07:22:58.070Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;MYSQL&quot;&gt;&lt;a href=&quot;#MYSQL&quot; class=&quot;headerlink&quot; title=&quot;MYSQL&quot;&gt;&lt;/a&gt;MYSQL&lt;/h1&gt;&lt;h1 id=&quot;MySql下大数据量级别（1000万-）优化查询和操作方法&quot;&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Linuxlock</title>
+    <link href="https://yappedyen.top/2023/06/27/linuxlock/"/>
+    <id>https://yappedyen.top/2023/06/27/linuxlock/</id>
+    <published>2023-06-27T07:15:57.000Z</published>
+    <updated>2023-06-27T07:16:16.500Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;Linux中的各种锁及其基本原理&quot;&gt;&lt;a href=&quot;#Linux中的各种锁及其基本原理&quot; class=&quot;headerlink&quot; title=&quot;Linux中的各种锁及其基本原理&quot;&gt;&lt;/a&gt;Linux中的各种锁及其基本原理&lt;/h1&gt;&lt;h2 id=&quot;1-概述&quot;&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    
+    <category term="C++" scheme="https://yappedyen.top/tags/C/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>KMP</title>
+    <link href="https://yappedyen.top/2023/06/27/kmp/"/>
+    <id>https://yappedyen.top/2023/06/27/kmp/</id>
+    <published>2023-06-27T07:14:52.000Z</published>
+    <updated>2023-06-27T07:15:33.140Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;KMP&quot;&gt;&lt;a href=&quot;#KMP&quot; class=&quot;headerlink&quot; title=&quot;KMP&quot;&gt;&lt;/a&gt;KMP&lt;/h1&gt;&lt;h1 id=&quot;什么是KMP&quot;&gt;&lt;a href=&quot;#什么是KMP&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    
+    <category term="algorithm" scheme="https://yappedyen.top/tags/algorithm/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>IOmultiplexing</title>
+    <link href="https://yappedyen.top/2023/06/27/iomultiplexing/"/>
+    <id>https://yappedyen.top/2023/06/27/iomultiplexing/</id>
+    <published>2023-06-27T07:14:10.000Z</published>
+    <updated>2023-06-27T07:14:31.571Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;IO多路复用&quot;&gt;&lt;a href=&quot;#IO多路复用&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    
+    <category term="C++" scheme="https://yappedyen.top/tags/C/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>gcc</title>
+    <link href="https://yappedyen.top/2023/06/27/gcc/"/>
+    <id>https://yappedyen.top/2023/06/27/gcc/</id>
+    <published>2023-06-27T07:13:03.000Z</published>
+    <updated>2023-06-27T07:13:23.188Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h3 id=&quot;GCC编译器在编译一个C语言程序时需要经过以下-4-步：&quot;&gt;&lt;a href=&quot;#GCC编译器在编译一个C语言程序时需要经过以下-4-步：&quot; class=&quot;headerlink&quot; title=&quot;GCC编译器在编译一个C语言程序时需要经过以下 4</summary>
+        
+      
+    
+    
+    
+    
+    <category term="C++" scheme="https://yappedyen.top/tags/C/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>memoryleak</title>
+    <link href="https://yappedyen.top/2023/06/27/memoryleak/"/>
+    <id>https://yappedyen.top/2023/06/27/memoryleak/</id>
+    <published>2023-06-27T07:12:19.000Z</published>
+    <updated>2023-06-27T07:12:39.322Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;内存泄漏&quot;&gt;&lt;a href=&quot;#内存泄漏&quot; class=&quot;headerlink&quot; title=&quot;内存泄漏&quot;&gt;&lt;/a&gt;内存泄漏&lt;/h1&gt;&lt;p&gt;是虚拟内存&lt;/p&gt;
+&lt;p&gt;内存泄漏，是由用户空间的堆上的数据&lt;/p&gt;
+&lt;h2 id=&quot;原因：&quot;&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    
+    <category term="C++" scheme="https://yappedyen.top/tags/C/"/>
+    
+  </entry>
   
   <entry>
     <title>HTTPS</title>
