@@ -5,7 +5,8 @@
 <head>
     <meta charset="utf-8">
     <meta name="keywords" content="ProcessedAndThreads, Pyenne">
-    <meta name="description" content="现代操作系统是如何做到进程之间隔离的?作者：北极链接：https://www.zhihu.com/question/536968552/answer/2657728501来源：知乎著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注">
+    <meta name="description" content="现代操作系统是如何做到进程之间隔离的?主要的工作是操作系统与MMU合作完成的。
+MMU也就是页表（评论里有人说这里描述不对，准确的说，MMU是操作页表的东西），可以控制哪些内存能被用户态访问，哪些内存能在内核态被访问，以及一个虚拟地址对应的">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -404,8 +405,7 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="现代操作系统是如何做到进程之间隔离的"><a href="#现代操作系统是如何做到进程之间隔离的" class="headerlink" title="现代操作系统是如何做到进程之间隔离的?"></a>现代操作系统是如何做到进程之间隔离的?</h1><p>作者：北极<br>链接：<a target="_blank" rel="noopener" href="https://www.zhihu.com/question/536968552/answer/2657728501">https://www.zhihu.com/question/536968552/answer/2657728501</a><br>来源：知乎<br>著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。  </p>
-<p>主要的工作是操作系统与MMU合作完成的。</p>
+                <h1 id="现代操作系统是如何做到进程之间隔离的"><a href="#现代操作系统是如何做到进程之间隔离的" class="headerlink" title="现代操作系统是如何做到进程之间隔离的?"></a>现代操作系统是如何做到进程之间隔离的?</h1><p>主要的工作是操作系统与MMU合作完成的。</p>
 <p>MMU也就是页表（评论里有人说这里描述不对，准确的说，MMU是操作页表的东西），可以控制哪些内存能被用户态访问，哪些内存能在内核态被访问，以及一个虚拟地址对应的物理地址是哪里。一般来说，<strong>内核态可以访问用户态的内存，但反过来不行</strong>。</p>
 <p>主流的操作系统都会划分出固定的内存区域，来区分内核态和用户态，同时，通过MMU页表来禁止用户态的代码直接访问内核区域的内存。</p>
 <p>比如32位Windows里，00000000 ~ 7FFFFFFF是用户内存区，80000000 ~ FFFFFFFF是内核内存区（2G用户，2G内核），用户态代码不能访问内核态代码，但内核态代码可以访问用户态代码。Linux一般是3G用户，1G内核。</p>

@@ -405,7 +405,7 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h4 id="1、作业调度"><a href="#1、作业调度" class="headerlink" title="1、作业调度"></a>1、作业调度</h4><p>作业调度又称为高级调度，频度较低。其主要工作是将<strong>位于外存</strong>后备<a target="_blank" rel="noopener" href="https://so.csdn.net/so/search?q=%E9%98%9F%E5%88%97&amp;spm=1001.2101.3001.7020">队列</a>中的某个（或某几个）作业<strong>调入内存</strong>，排在<strong>就绪队列</strong>上。注意了，这个时候仅仅是将作业调入<a target="_blank" rel="noopener" href="https://so.csdn.net/so/search?q=%E5%86%85%E5%AD%98&amp;spm=1001.2101.3001.7020">内存</a>，并为作业<strong>创建进程、分配资源</strong>，此时<strong>进程处于就绪态</strong>，并<strong>没有执行</strong>。</p>
+                <h4 id="1、作业调度"><a href="#1、作业调度" class="headerlink" title="1、作业调度"></a>1、作业调度</h4><p>作业调度又称为高级调度，频度较低。其主要工作是将<strong>位于外存</strong>后备队列中的某个（或某几个）作业<strong>调入内存</strong>，排在<strong>就绪队列</strong>上。注意了，这个时候仅仅是将作业调入内存，并为作业<strong>创建进程、分配资源</strong>，此时<strong>进程处于就绪态</strong>，并<strong>没有执行</strong>。</p>
 <h4 id="2、进程调度"><a href="#2、进程调度" class="headerlink" title="2、进程调度"></a>2、进程调度</h4><p>进程调度又称为低级调度，是最基本的、频度最高的调度方式。其主要任务是从<strong>就绪队列中选取</strong>一个（或几个）进程，并<strong>分配处理机</strong>的过程，这时候才可以理解为“<strong>执行</strong>”。</p>
 <h4 id="3、区别"><a href="#3、区别" class="headerlink" title="3、区别"></a>3、区别</h4><p>作业调度和进程调度最主要的区别在于，前者是为作业<strong>建立进程</strong>的过程，是将作业由<strong>外存调入内存</strong>的过程；而后者整个过程并没有跑出内存的范围，是将<strong>就绪态</strong>的进程变为<strong>运行态</strong>的过程。</p>
 <p>一般来说，作业进入系统到最后完成，可能经历三级调度：高级调度、中级调度和低级调度。</p>

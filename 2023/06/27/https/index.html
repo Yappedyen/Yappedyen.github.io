@@ -408,7 +408,7 @@
 <h3 id="HTTP-原理："><a href="#HTTP-原理：" class="headerlink" title="HTTP 原理："></a>HTTP 原理：</h3><p>①  客户端的浏览器首先要通过网络与服务器建立连接，该连接是通过 TCP 来完成的，一般 TCP 连接的端口号是80。 建立连接后，客户机发送一个请求给服务器，请求方式的格式为：统一资源标识符（URI）、协议版本号，后边是 MIME 信息包括请求修饰符、客户机信息和许可内容。</p>
 <p>②  服务器接到请求后，给予相应的响应信息，其格式为一个状态行，包括信息的协议版本号、一个成功或错误的代码，后边是 MIME 信息包括服务器信息、实体信息和可能的内容。</p>
 <h3 id="HTTPS："><a href="#HTTPS：" class="headerlink" title="HTTPS："></a>HTTPS：</h3><p>是以安全为目标的 HTTP 通道，是 HTTP 的安全版。HTTPS 的安全基础是 SSL。SSL 协议位于 TCP/IP 协议与各种应用层协议之间，为数据通讯提供安全支持。SSL 协议可分为两层：<strong>SSL 记录协议</strong>（SSL Record Protocol），它建立在可靠的传输协议（如TCP）之上，为高层协议提供数据封装、压缩、加密等基本功能的支持。<strong>SSL 握手协议</strong>（SSL Handshake Protocol），它建立在 SSL 记录协议之上，用于在实际的数据传输开始前，通讯双方进行身份认证、协商加密算法、交换加密密钥等。</p>
-<p><img src="https://img-blog.csdnimg.cn/20200707084720409.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM4Mjg5ODE1,size_16,color_FFFFFF,t_70" alt="img"></p>
+<p><img src="/images/20200707084720409.png" alt="img"></p>
 <h3 id="HTTPS-设计目标："><a href="#HTTPS-设计目标：" class="headerlink" title="HTTPS 设计目标："></a>HTTPS 设计目标：</h3><p>(1) <strong>数据保密性</strong>：保证数据内容在传输的过程中不会被第三方查看。就像快递员传递包裹一样，都进行了封装，别人无法获知里面装了什么  。</p>
 <p>(2) <strong>数据完整性</strong>：及时发现被第三方篡改的传输内容。就像快递员虽然不知道包裹里装了什么东西，但他有可能中途掉包，数据完整性就是指如果被掉包，我们能轻松发现并拒收 。</p>
 <p>(3) <strong>身份校验安全性</strong>：保证数据到达用户期望的目的地。就像我们邮寄包裹时，虽然是一个封装好的未掉包的包裹，但必须确定这个包裹不会送错地方，通过身份校验来确保送对了地方  。</p>
@@ -461,8 +461,8 @@
 <li><p>HTTPS 协议的加密范围也比较有限。最关键的，SSL 证书的信用链体系并不安全，特别是在某些国家可以控制 CA 根证书的情况下，中间人攻击一样可行。</p>
 </li>
 </ol>
-<h2 id="六、HTTPS-的连接过程-四次握手"><a href="#六、HTTPS-的连接过程-四次握手" class="headerlink" title="六、HTTPS 的连接过程(四次握手)"></a>六、HTTPS 的连接过程(四次握手)</h2><p><img src="https://img-blog.csdn.net/20160908113751341" alt="img"></p>
-<p><img src="https://img-blog.csdn.net/20180709141944471?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM4Mjg5ODE1/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt="img"></p>
+<h2 id="六、HTTPS-的连接过程-四次握手"><a href="#六、HTTPS-的连接过程-四次握手" class="headerlink" title="六、HTTPS 的连接过程(四次握手)"></a>六、HTTPS 的连接过程(四次握手)</h2><p><img src="/images/20160908113751341.png" alt="img"></p>
+<p><img src="/images/20180709141944471.jpg" alt="img"></p>
 <p>图片中的过程是按 8 个步骤分的，但是网上有更详细的步骤，所以我把详细的过程和这个图片配在一起。</p>
 <p>① 客户端的浏览器向服务器发送请求，并传送客户端 SSL 协议的版本号，加密算法的种类，产生的随机数，以及其他服务器和客户端之间通讯所需要的各种信息。</p>
 <p>② 服务器向客户端传送 SSL 协议的版本号，加密算法的种类，随机数以及其他相关信息，同时服务器还将向客户端传送自己的证书。</p>

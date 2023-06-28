@@ -416,9 +416,9 @@
 </ul>
 <p>使用阻塞模式的套接字编写网络程序比较简单，容易实现。但是在服务器端，通常要处理大量的套接字通信请求，如果线程阻塞于上述的某一个输入或输出调用时，将无法处理其他任何运算或响应其他网络请求，这么做无疑是十分低效的，当然可以采用多线程，但大量的线程占用很大的内存空间，并且线程切换会带来很大的开销。而I/O多路复用模型能处理多个connection的优点就使其<strong>能支持更多的并发连接请求</strong>。</p>
 <p>Linux支持I/O多路复用的系统调用有select、poll、epoll，这些调用都是内核级别的。但select、poll、epoll本质上都是同步I/O，先是block住等待就绪的socket，再block住将数据从内核拷贝到用户内存空间。基于select调用的I/O复用模型如下：</p>
-<p><img src="https://pic3.zhimg.com/80/v2-bae9d6368b741d17e09c791a664a43ba_1440w.jpg" alt="img"></p>
+<p><img src="/images/v2-bae9d6368b741d17e09c791a664a43ba_1440w.jpg" alt="img"></p>
 <p>select，poll，epoll之间的区别如下图：</p>
-<p><img src="https://pic1.zhimg.com/80/v2-e6a869884585625dfc7eace1b90c3024_1440w.png" alt="img"></p>
+<p><img src="/images/v2-e6a869884585625dfc7eace1b90c3024_1440w.png" alt="img"></p>
 <p>Linux提供的select相关函数接口如下：</p>
 <pre class="line-numbers language-c" data-language="c"><code class="language-c"><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;sys/select.h&gt;</span></span>
 <span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;sys/time.h&gt;</span></span>
@@ -619,7 +619,7 @@ EPOLLONESHOT：只监听一次事件，当监听完这次事件之后，如果�
 <ol>
 <li><p><strong>epoll_create</strong>函数创建一个epoll句柄，参数size表明内核要监听的描述符数量。调用成功时返回一个epoll句柄描述符，失败时返回-1。</p>
 </li>
-<li><p><strong>epoll_ct</strong>l函数注册要监听的事件类型。四个参数解释如下：<br><img src="https://www.zhihu.com/equation?tex=%5Ccirc+" alt="[公式]"> epfd表示epoll句柄；<br><img src="https://www.zhihu.com/equation?tex=%5Ccirc+" alt="[公式]"> op表示fd操作类型：<strong>EPOLL_CTL_ADD</strong>（注册新的fd到epfd中），<strong>EPOLL_CTL_MOD</strong>（修改已注册的fd的监听事件），<strong>EPOLL_CTL_DEL</strong>（从epfd中删除一个fd）<br><img src="https://www.zhihu.com/equation?tex=%5Ccirc+" alt="[公式]"> fd是要监听的描述符；<br><img src="https://www.zhihu.com/equation?tex=%5Ccirc+" alt="[公式]"> event表示要监听的事件<br>epoll_event结构体定义如下：</p>
+<li><p><strong>epoll_ct</strong>l函数注册要监听的事件类型。四个参数解释如下：<br> epfd表示epoll句柄；<br> op表示fd操作类型：<strong>EPOLL_CTL_ADD</strong>（注册新的fd到epfd中），<strong>EPOLL_CTL_MOD</strong>（修改已注册的fd的监听事件），<strong>EPOLL_CTL_DEL</strong>（从epfd中删除一个fd）<br> fd是要监听的描述符；<br> event表示要监听的事件。<br>epoll_event结构体定义如下：</p>
 <pre class="line-numbers language-c" data-language="c"><code class="language-c"><span class="token keyword">struct</span> <span class="token class-name">epoll_event</span> <span class="token punctuation">{</span>
     __uint32_t events<span class="token punctuation">;</span>  <span class="token comment">/* Epoll events */</span>
     <span class="token class-name">epoll_data_t</span> data<span class="token punctuation">;</span>  <span class="token comment">/* User data variable */</span>
@@ -632,7 +632,7 @@ EPOLLONESHOT：只监听一次事件，当监听完这次事件之后，如果�
     __uint64_t u64<span class="token punctuation">;</span>
 <span class="token punctuation">}</span> <span class="token class-name">epoll_data_t</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre></li>
 <li><p><strong>epoll_wait</strong>函数等待事件的就绪，成功时返回就绪的事件数目，调用失败时返回 -1，等待超时返回 0。</p>
-<p><img src="https://www.zhihu.com/equation?tex=%5Ccirc+" alt="[公式]"> epfd是epoll句柄<br><img src="https://www.zhihu.com/equation?tex=%5Ccirc+" alt="[公式]"> events表示从内核得到的就绪事件集合<br><img src="https://www.zhihu.com/equation?tex=%5Ccirc+" alt="[公式]"> maxevents告诉内核events的大小<br><img src="https://www.zhihu.com/equation?tex=%5Ccirc+" alt="[公式]"> timeout表示等待的超时事件</p>
+<p> epfd是epoll句柄；<br> events表示从内核得到的就绪事件集合；<br> maxevents告诉内核events的大小；<br> timeout表示等待的超时事件。</p>
 </li>
 </ol>
 <p>epoll_create的源码实现：</p>
@@ -833,7 +833,6 @@ EPOLLONESHOT：只监听一次事件，当监听完这次事件之后，如果�
 <li>select，poll实现需要自己不断轮询所有fd集合，直到设备就绪，期间可能要睡眠和唤醒多次交替。而epoll其实也需要调用epoll_wait不断轮询就绪链表，期间也可能多次睡眠和唤醒交替，但是它是设备就绪时，调用回调函数，把就绪fd放入就绪链表中，并唤醒在epoll_wait中进入睡眠的进程。虽然都要睡眠和交替，但是select和poll在“醒着”的时候要遍历整个fd集合，而epoll在“醒着”的时候只要判断一下就绪链表是否为空就行了，这节省了大量的CPU时间。这就是回调机制带来的性能提升。</li>
 <li>select，poll每次调用都要把fd集合从用户态往内核态拷贝一次，并且要把current往设备等待队列中挂一次，而epoll只要一次拷贝，而且把current往等待队列上挂也只挂一次（在epoll_wait的开始，注意这里的等待队列并不是设备等待队列，只是一个epoll内部定义的等待队列）。这也能节省不少的开销。</li>
 </ul>
-<p><img src="C:\Users\PengY\AppData\Roaming\Typora\typora-user-images\image-20220311223126301.png" alt="image-20220311223126301"></p>
 
                 
             </div>
